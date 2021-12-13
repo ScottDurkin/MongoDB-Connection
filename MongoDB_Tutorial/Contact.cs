@@ -12,5 +12,7 @@ namespace MongoDB_Tutorial
         public ObjectId _id { get; set; }
         public String Name { get; set; }
         public int PhoneNumber { get; set; }
+        public byte[] Image { get; set; }
+
     }
 }
