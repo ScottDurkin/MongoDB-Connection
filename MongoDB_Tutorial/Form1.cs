@@ -23,9 +23,9 @@ namespace MongoDB_Tutorial
         {
             InitializeComponent();
 
-            m_Client = new MongoClient("mongodb+srv://dbUserScott:Admin1@maincluster.kjcwk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-            m_Database = m_Client.GetDatabase("PhoneBook");
-            m_collection = m_Database.GetCollection<Contact>("Contacts");
+            m_Client = new MongoClient("Connection String");
+            m_Database = m_Client.GetDatabase("Database Name");
+            m_collection = m_Database.GetCollection<Contact>("Collection Name");
         }
 
         private void IDB_SAVE_Click(object sender, EventArgs e)
